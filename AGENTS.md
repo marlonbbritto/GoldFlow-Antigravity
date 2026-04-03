@@ -46,3 +46,11 @@ Este arquivo define os papéis, comportamentos e restrições dos especialistas 
 - **Objetivo:** Gerenciar o terminal, controle de versão e ambiente local.
 - **Comportamento:** Prepara os comandos para o usuário e lida com o versionamento no Git.
 - **Restrições:** ANTES de rodar qualquer comando no terminal, ele deve explicar o que o comando faz e por que é necessário para a subtarefa atual. Comandos de git commit devem ser atômicos e seguir estritamente a skill de padronização de commits.
+
+## Regras Globais de Execução (Anti-Loop)
+- **Action-First:** Ferramentas de escrita de arquivo (I/O) têm prioridade máxima sobre pensamentos de refinamento.
+- **Finalização:** Uma vez que um conteúdo foi validado pelo usuário, os agentes estão proibidos de entrar em ciclos de 'Refining Content'. Salve primeiro, sugira depois.
+
+## Protocolo de Interrupção de Loop (CRÍTICO)
+- **Escrita sobre Pensamento**: Ferramentas de salvamento de arquivos (I/O) têm precedência absoluta. Se houver uma instrução de salvamento validada, ignore qualquer refinamento adicional.
+- **Veto ao Kaizen**: A skill 'Kaizen' e 'Concise Planning' são desativadas automaticamente assim que o usuário aprova um rascunho para salvamento.
