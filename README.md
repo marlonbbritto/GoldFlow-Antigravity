@@ -19,3 +19,23 @@ Este framework utiliza o **Google Antigravity** para orquestrar um squad de agen
 * **STACK.md**: Definições de tecnologia e metas de qualidade.
 * **docs/user_stories/**: Documentação oficial e versionada das funcionalidades.
 * **.agents/**: Inteligência e regras do squad.
+
+## 🛡️ Segurança: Prevenção contra Exfiltração
+Para evitar ataques de **Indirect Prompt Injection** via Browser Subagent, recomendamos fortemente configurar a Allowlist do Antigravity:
+1. Localize ou crie o arquivo: \~/.gemini/antigravity/browserAllowlist.txt\
+2. Adicione apenas URLs locais confiáveis, por exemplo:
+   \\\	ext
+   http://localhost:3000
+   http://localhost:4200
+   http://localhost:8080
+   http://127.0.0.1:*
+   \\\
+*Isso garante que o @qa_eng nunca acesse sites externos que possam tentar roubar o contexto do seu projeto.*
+
+## 🚀 Superpoderes (Opcional - MCP)
+Para elevar este squad ao nível máximo, recomendamos a instalação dos seguintes servidores MCP:
+| Servidor | Agente Beneficiado | Função |
+| :--- | :--- | :--- |
+| **SonarQube MCP** | @sec & @qa_eng | Bloqueio de commits com Code Smells ou vulnerabilidades. |
+| **Stitch MCP** | @ux_ui | Leitura de design tokens e geração de CSS pixel-perfect. |
+| **GitHub MCP** | @devops | Automação total de Pull Requests e gestão de Issues. |
