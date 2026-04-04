@@ -1,6 +1,6 @@
 ﻿# Definição da Stack Tecnológica (Tech Stack)
 
-Este arquivo define a pilha tecnológica oficial deste projeto. Os agentes de IA DEVEM ler este arquivo para determinar quais linguagens, frameworks e ferramentas utilizar antes de iniciar qualquer desenvolvimento.
+Este arquivo define a pilha tecnológica oficial deste projeto. Os agentes de IA DEVEM ler este arquivo para determinar quais linguagens, frameworks e ferramentas utilizar.
 
 ## Backend
 - **Linguagem:** [Defina aqui, ex: Java 21+, Node.js, Python]

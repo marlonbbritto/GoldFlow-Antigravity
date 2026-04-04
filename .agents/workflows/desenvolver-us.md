@@ -16,3 +16,4 @@ description: Guia o desenvolvimento seguro e atÃ´mico de uma User Story valida
    - Atue como @sec para verificar se todos os testes passaram e se nada sensÃ­vel vazarÃ¡ no commit.
    - Se aprovado, atue como @devops INVOCANDO OBRIGATORIAMENTE a habilidade pr-commit-standards. Prepare os comandos de commit utilizando a semÃ¢ntica correta (Conventional Commits) e a uniÃ£o via git merge --no-ff.
    - **PeÃ§a autorizaÃ§Ã£o final** antes de rodar os comandos do Git.
+

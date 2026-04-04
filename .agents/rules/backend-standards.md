@@ -1,5 +1,5 @@
 ﻿# Padrões de Desenvolvimento Backend
 - Siga o Padrão Arquitetural definido no STACK.md.
-- Isole o domínio de frameworks.
-- Use DTOs para comunicação externa.
-- Valide linguagens e frameworks em STACK.md antes de iniciar.
+- Isole o domínio de frameworks e implemente TDD.
+- Use DTOs para comunicação externa; nunca exponha entidades.
+- Valide tecnologias em STACK.md antes de iniciar.
