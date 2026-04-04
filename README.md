@@ -1,50 +1,52 @@
 ﻿# 🚀 GoldFlow Antigravity: Squad de Desenvolvimento Autônomo
 
-Este projeto define uma arquitetura de workspace local no **Google Antigravity** para orquestrar um squad de agentes de IA especializados que atuam no ciclo de desenvolvimento de software. O foco é garantir alta qualidade técnica, segurança e disciplina através de intervenções humanas apenas para aprovações estratégicas.
-
-## 📦 Como Iniciar (Getting Started)
-
-Para utilizar este framework, siga os passos abaixo após clonar o repositório:
-
-### 1. Criar Estrutura de Planejamento Local
-Por questões de segurança e governança, a pasta de planejamento técnico é ignorada pelo Git. Execute o comando abaixo no terminal para recriar a estrutura necessária para o funcionamento dos agentes:
-
-    New-Item -ItemType Directory -Path "_planejamento_squad/blueprints", "_planejamento_squad/us_gerais", "_planejamento_squad/planos_implementacao" -Force
-
-### 2. Definir a Stack Tecnológica
-O framework é agnóstico. Abra o arquivo STACK.md localizado na raiz do projeto e defina as linguagens e frameworks que a sua equipe utilizará (ex: Node.js, Java, React, Angular). Os agentes lerão este arquivo para balizar o desenvolvimento.
-
-### 3. Configurar o Antigravity
-Nas configurações (**Settings**) da IDE, aplique os seguintes padrões obrigatórios para este workspace:
-* **Agent Mode**: Planning Mode.
-* **Artifact Review Policy**: Request Review.
-* **Terminal Command Execution**: Request Review.
-
----
+Este projeto utiliza a arquitetura de workspace local do **Google Antigravity** para orquestrar um squad de agentes de IA especializados[cite: 1, 2]. O objetivo é garantir alta qualidade técnica através de um ciclo de desenvolvimento rigoroso, onde a intervenção humana é focada em aprovações estratégicas[cite: 2].
 
 ## 🧠 O Squad (Personas)
-Cada agente possui um papel estrito definido no arquivo AGENTS.md:
-* **@po (Product Owner)**: Requisitos de negócio e User Stories no modelo INVEST.
-* **@architect**: Guardião da Arquitetura, SOLID e Clean Code.
-* **@qa_eng**: Critérios de aceite e validação E2E via navegador.
-* **@agile**: Decomposição de tarefas e disciplina da esteira ágil.
-* **@backend_dev / @frontend_dev**: Execução técnica guiada pelo STACK.md.
-* **@sec**: Auditor de segurança e guardião do .gitignore.
-* **@devops**: Manipulação segura do terminal e fluxo de Git.
+Cada agente possui um papel estrito definido no `AGENTS.md` para evitar sobreposição de funções[cite: 16, 18]:
+* **@po (Product Owner)**: Responsável pelos requisitos de negócio e User Stories no modelo INVEST[cite: 19].
+* **@architect**: Guardião da Arquitetura Hexagonal, domínios ricos e princípios SOLID[cite: 20, 21].
+* **@qa_eng**: Responsável pelos critérios de aceite, Shift-Left Testing e validação E2E via navegador[cite: 22, 23].
+* **@ux_ui**: Define o Design DNA e extrai metadados visuais via Google Stitch[cite: 24, 25].
+* **@agile**: Orquestra o fluxo de tarefas e garante a disciplina da esteira[cite: 26].
+* **@backend_dev / @frontend_dev**: Execução técnica em Java 21+ e Angular LTS[cite: 27, 28].
+* **@sec**: Auditor de segurança e guardião do `.gitignore`[cite: 29].
+* **@devops**: Manipulação do terminal e fluxo de Git seguro[cite: 31].
 
-## 🛠️ Workflows Principais
-Os fluxos são disparados via comandos de barra (/):
-* **/criar-us**: Orquestra o planejamento técnico e visual antes da codificação.
-* **/desenvolver-us**: Guia a implementação atômica com testes obrigatórios e commit seguro (via pr-commit-standards).
+## 🛠️ Fluxos de Trabalho (Workflows)
+O squad opera através de comandos de barra (`/`) integrados ao Antigravity[cite: 47, 48]:
+
+### 1. `/criar-us` (Planejamento)
+Inicia o ciclo de **Shift-Left**, onde a tríade (@po, @architect, @qa_eng) debate e documenta a funcionalidade antes de qualquer código existir[cite: 49, 50, 52]. O planejamento é salvo na pasta `_planejamento_squad/` (ignorada pelo Git)[cite: 56, 57].
+
+### 2. `/desenvolver-us` (Execução)
+O @agile quebra a US em subtarefas atômicas[cite: 58, 60]. O desenvolvimento segue um ciclo rigoroso de codificação, testes unitários e testes de interface (E2E) simulados no navegador pelo @qa_eng[cite: 61, 63, 64, 66].
+
+## ⚖️ Padrões e Guardrails
+* **Backend**: Java 21+, Spring/Quarkus, Arquitetura Hexagonal e Clean Code[cite: 27, 37].
+* **Frontend**: Angular (últimas versões LTS) com componentização estrita[cite: 28, 38].
+* **Controle de Versão**:
+    * Commits atômicos (máximo de ~300 linhas alteradas)[cite: 39].
+    * Merges obrigatoriamente realizados com a flag `--no-ff` para preservar o histórico[cite: 40, 67].
+* **Segurança**: A pasta de planejamento técnico (`_planejamento_squad/`) nunca deve ser commitada[cite: 10, 57].
 
 ## 📂 Estrutura do Projeto
-* _planejamento_squad/: (Ignorado pelo Git) Contém blueprints, US validadas e planos de implementação.
-* .agents/: Contém a "inteligência" do squad (regras passivas, habilidades avançadas importadas e workflows).
-* AGENTS.md: Definição central das personas e limites de cada agente.
-* STACK.md: Template para definição das tecnologias do projeto.
+
+* **`_planejamento_squad/`**: (Ignorado pelo Git) Contém blueprints, US validadas e planos de implementação.
+* **`.agents/`**: Contém a "inteligência" do squad (regras, habilidades e workflows).
+* **`AGENTS.md`**: Definição central das personas e limites de cada agente.
 
 ## ⚖️ Padrões de Engenharia
-* **Git**: Commits atômicos (máximo ~300 linhas), uso de Conventional Commits e flag --no-ff em todos os merges para preservação do histórico (Controlado pela skill pr-commit-standards).
+
+* **Backend**: Java 21+, frameworks Spring/Quarkus e domínios ricos.
+* **Frontend**: Angular LTS e componentização estrita.
+* **Git**: Commits atômicos (máximo ~300 linhas) e uso obrigatório de `git merge --no-ff`.
+
+## ⚙️ Configuração do Workspace
+Para este framework funcionar, as seguintes **Settings** devem estar ativas no Antigravity[cite: 3, 4]:
+1. **Agent Mode**: `Planning Mode`[cite: 5].
+2. **Artifact Review Policy**: `Request Review`[cite: 6].
+3. **Terminal Command Execution**: `Request Review`[cite: 7].
 
 ---
-*Este framework foi desenvolvido para garantir transparência e rastreabilidade total no desenvolvimento assistido por IA.*
+*Este framework de governança foi estruturado para maximizar a autonomia da IA mantendo o controle de qualidade total pelo usuário.*
