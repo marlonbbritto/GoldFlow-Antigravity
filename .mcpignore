@@ -1,0 +1,37 @@
+# 🛡️ GoldFlow AI Firewall (MCP Ignore)
+# Define o que os agentes de IA NÃO podem ler ou escrever.
+# O Git ignora o que está no .gitignore, mas o Agente ignora o que está aqui.
+
+# 🚀 Build & Dependências (Evita consumo de contexto inútil)
+node_modules/
+dist/
+out/
+target/
+bin/
+obj/
+*.exe
+*.dll
+*.so
+*.class
+
+# 🔑 Segurança & Credenciais (Bloqueio total I/O para IA)
+.env
+*.pem
+*.key
+*.p12
+secrets.json
+auth.json
+
+# 💻 IDEs & Sistema (Metadados irrelevantes)
+.idea/
+.vscode/
+.next/
+.angular/
+.DS_Store
+Thumbs.db
+
+# 🧪 Outros
+logs/
+*.log
+tmp/
+temp/

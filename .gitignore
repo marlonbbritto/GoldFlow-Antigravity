@@ -1,1 +1,34 @@
+# 📦 GoldFlow Git Ignore (GitHub)
+# Define o que o Git NÃO enviará para o remoto.
 
+# 🧠 Planejamento Técnico (EXCLUSIVO LOCAL)
+_planejamento_squad/
+
+# 🚀 Build & Dependências
+node_modules/
+dist/
+out/
+target/
+bin/
+obj/
+*.class
+
+# 🔑 Segurança & Credenciais
+.env
+*.pem
+*.key
+*.p12
+
+# 💻 IDEs & Sistema
+.idea/
+.vscode/
+.next/
+.angular/
+.DS_Store
+Thumbs.db
+
+# 🧪 Logs & Temporários
+logs/
+*.log
+tmp/
+temp/
