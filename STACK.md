@@ -15,7 +15,7 @@ Este arquivo define a pilha tecnológica oficial deste projeto. Os agentes de IA
 - **Padrão Arquitetural:** [Defina aqui, ex: Arquitetura Hexagonal, Clean Architecture]
 
 ## Qualidade e Testes (Guardrails)
-- **Cobertura Mínima (Backend):** [Defina aqui, ex: 80%, 90%]
-- **Cobertura Mínima (Frontend):** [Defina aqui, ex: 70%, 80%]
+- **Cobertura Mínima (Backend):** 90%
+- **Cobertura Mínima (Frontend):** 80%
 - **Ferramenta de Coverage:** [Defina aqui, ex: JaCoCo, Jest, Coverage.py]
 - **Estratégia de Teste:** Priorizar TDD (Test-Driven Development) para regras de negócio.

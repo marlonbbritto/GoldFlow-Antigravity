@@ -1,10 +1,10 @@
-# 📦 GoldFlow Git Ignore (GitHub)
-# Define o que o Git NÃO enviará para o remoto.
+﻿# ðŸ“¦ GoldFlow Git Ignore (GitHub)
+# Define o que o Git NÃƒO enviarÃ¡ para o remoto.
 
-# 🧠 Planejamento Técnico (EXCLUSIVO LOCAL)
-_planejamento_squad/
+# ðŸ§  Planejamento TÃ©cnico (EXCLUSIVO LOCAL)
 
-# 🚀 Build & Dependências
+
+# ðŸš€ Build & DependÃªncias
 node_modules/
 dist/
 out/
@@ -13,13 +13,13 @@ bin/
 obj/
 *.class
 
-# 🔑 Segurança & Credenciais
+# ðŸ”‘ SeguranÃ§a & Credenciais
 .env
 *.pem
 *.key
 *.p12
 
-# 💻 IDEs & Sistema
+# ðŸ’» IDEs & Sistema
 .idea/
 .vscode/
 .next/
@@ -27,8 +27,9 @@ obj/
 .DS_Store
 Thumbs.db
 
-# 🧪 Logs & Temporários
+# ðŸ§ª Logs & TemporÃ¡rios
 logs/
 *.log
 tmp/
 temp/
+

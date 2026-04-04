@@ -18,3 +18,4 @@ Atuar como um Analista de QA realizando o teste de interface do usuário via nav
 - O teste DEVE ser feito interagindo com a interface gráfica real via Browser Subagent.
 - **Sincronia Técnica:** Se o ambiente não subir, valide os comandos de execução no \STACK.md\ antes de reportar erro.
 - Se falhar, documente com screenshot do console do navegador e devolva ao @backend_dev ou @frontend_dev conforme a natureza do bug.
+
